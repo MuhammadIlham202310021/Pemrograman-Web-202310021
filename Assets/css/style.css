@@ -1,0 +1,136 @@
+/* Css Navigasi atau Header */
+.nav-link, .dropdown-item, .title{
+  color: #49BEB7;
+}
+
+.sosmed > img{
+  width: 45px;
+  float: right;
+  padding-left: 15px;
+}
+
+/* Css Layout Buku */
+.judul-buku, .card-text, .tekskategori{
+  text-decoration: none;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.lihat-semua{
+  color: #49BEB7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buat-karya{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #49BEB7;
+}
+
+.kotak-putih{
+  border: 1px solid rgb(225,225,225);
+  background-color: white !important;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 10%);
+  margin-bottom: 15px !important;
+  border-radius: 4px;
+}
+
+.card-img-top, .card-img{
+  padding: 10px;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.5)!important;
+  width: 155px;
+  height: 230px;
+}
+
+.card-text{
+  color: #32DBC6;
+  font-size: 14px;
+}
+
+.judul-buku{
+  color: #085F63;
+  font-size: 16px;
+}
+
+.card {
+	box-shadow: 2px 2px 5px 1px #888888;
+	padding: 10px;
+	background-color: white;
+}
+
+#buku-pinjam{
+	display: flex
+}
+#buku-pinjam > .buku-pinjam-img{
+	margin-right: 15px;
+	float: left;
+}
+
+#buku-pinjam > .detail-buku{
+	width: 100%;
+}
+
+.bagikan{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.create-img{
+  width: 195px;
+  height: 304px;
+}
+
+.tekskategori{
+  font-size: 4vh;
+  color: #49BEB7;
+  text-decoration-color: aqua;
+}
+
+/* Css Footer */
+.shadow-content {
+  box-shadow: 0 -2px 10px #e5e5e5;
+}
+
+/* Css Owl Carousel */
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 90px;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 80px;
+  color: black;
+  
+}
+
+.owl-theme,
+.owl-nav[class*="owl-"]:hover {
+  background: transparent;
+}
+
+.logof{
+  padding-right: 10%;
+}

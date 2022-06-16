@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+
+  <link href="../../Assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="../../Assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../Assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../Assets/css/style.css">
+  <title>Karya Saya</title>
+
+</head>
+
+<body class="bg-light">
+
+
+  <!-- Header Start -->
+  <header class="sticky-top">
+
+    <!-- Nav 1 Start -->
+    <nav class="navbar text-light" style="background-color: #49BEB7; ">
+      <div class="container d-flex ">
+
+        <!-- Logo Ruang Baca -->
+        <div class="col-md-8">
+          <a class="navbar-brand text-light" href="/">
+            <img src="" alt="Logo Ruang Baca" width="50vh" height="35vh">
+
+          </a>
+        </div>
+        <!-- Bagian Profile/Login -->
+        <div class="col-md-4 text-md-end justify-content-end d-flex">
+          <a class="bi bi-person-circle pe-3" style="font-size: 3vh; color: white;" href="./Login/" role="button">
+            Sign in/Join
+          </a>
+          <a class="sosmed" href=""><img src="/Assets/twitter.png" class="img-fluid" alt="twitter"></a>
+          <a class="sosmed" href=""><img src="/Assets/instagram.png" class="img-fluid" alt="instagram"></a>
+          <a class="sosmed" href=""><img src="/Assets/facebook.png" class="img-fluid" alt="facebook"></a>
+        </div>
+
+      </div>
+    </nav>
+    <!-- Nav 1 End -->
+
+    <!-- Nav 2 Start -->
+    <nav class="navbar navbar-expand-lg bg-light" style=" box-shadow: 0 6px 10px #bbbbbb59; color: #49BEB7;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav" style="font-size: 17px;">
+            <li class="nav-item dropdown" style="background-color: #49BEB7;">
+              <a class="block-title nav-link dropdown-toggle-item bi bi-justify text-white" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rak Buku
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../DiPinjam">DiPinjam</a></li>
+                <li><a class="dropdown-item" href="../Favorit">Favorit</a></li>
+                <li><a class="dropdown-item" href="../Karya Saya">Karya Saya</a></li>
+                <li><a class="dropdown-item" href="../Riwayat">Riwayat</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Kategori">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Pengaturan/">Pengaturan</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tombol Pencarian -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" style="background-color: #49BEB7;"><i
+              class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- Nav 2 End -->
+  </header>
+  <!-- Header End -->
+
+
+  <!-- First Layout Start -->
+  <div class="container pb-5">
+    <div class="top mt-4">
+      <div class="title ">
+        <h1 style="color: #49BEB7; ">Karya Saya</h1>
+      </div>
+      <a href="/Rak Buku/karya baru">
+        <button class="buat-karya btn-outline-light"><i class="bi bi-file-earmark-plus"></i>
+          Karya baru
+        </button></a>
+    </div>
+
+    <div class="row g-2 mt-2 justify-content-between">
+      <div class="col-6 card mb-3" style="width: 84vh;">
+        <div id="buku-pinjam">
+          <div class="buku-pinjam-img">
+            <img src="../../Assets/Buku/1.png" alt="my-profile" class="card-img">
+          </div>
+          <div class="detail-buku">
+            <div class="top">
+              <h3 class="title">Judul Buku</h3>
+              <!-- Button trigger modal -->
+              <a type="button" class="btn btn-outline-light text-end" style="background-color: #49BEB7;"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-solid fa-trash-can"></i>
+              </a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Hapus dari karya saya</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Apa anda yakin ingin menghapus buku dari daftar karya saya ?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                      <button type="button" class="btn btn-primary">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <h6 class="card-text me-2">Bagikan</h6>
+              <a href="#" class="bagikan"><i class="fa-solid fa-copy"></i></a>
+              <a href="#" class="bagikan"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="#" class="bagikan"><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+            <div class="d-flex mb-3">
+              <h6 class="card-text me-2">Review</h6>
+              <a href="#" class="bagikan"><i class="bi bi-star"></i></a>
+              <a href="#" class="bagikan"><i class="bi bi-star"></i></a>
+              <a href="#" class="bagikan"><i class="bi bi-star"></i></a>
+              <a href="#" class="bagikan"><i class="bi bi-star"></i></a>
+              <a href="#" class="bagikan"><i class="bi bi-star"></i></a>
+            </div>
+            <h6 class="card-text">Dibuat pada tanggal</h6>
+            <h6 class="card-text">Diubah pada tanggal</h6>
+          </div>
+        </div>
+        <div class="row d-flex mt-3 align-items-center">
+          <div class="col d-grid"> <a type="button" class="btn btn-outline-light" style="background-color: #49BEB7;"
+              data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-square-pen"></i> Edit Detail
+            </a>
+          </div>
+          <div class="col d-grid"> <a type="button" class="btn btn-outline-light" style="background-color: #49BEB7;"
+              data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i> Edit
+              Cerita
+            </a>
+          </div>
+          <div class="col d-grid">
+            <a type="button" class="btn btn-outline-light" style="background-color: #49BEB7;" data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><i class="bi bi-upload"></i> Terbitkan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="shadow-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="" alt="Logo Ruang Baca" width="100" height="85">
+          </div>
+          <div class="col-md-4 pt-3 text-center">
+            <p style="color:#49BEB7">Ruang online untuk membaca dan dapat menjadi tempat untuk
+              mempublikasikan
+              karya tulis</p>
+          </div>
+          <div class="col-md-4 pt-2 text-center" style="font-size: 13px">
+            <p><b>Ruang Baca</b> tersedia di seluruh perangkat iOS dan Android</p>
+            <a href="#"><img src="/Assets/play store.png" alt="" style="height: 30px;" width="90px"></a>
+            <a href="#"><img src="/Assets/app store.png" alt="" style="height: 30px;" width="90px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright card-footer text-muted text-center">
+      ©2022 RUANGBACA.klmpk1
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+  <!-- First Layout End-->
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="../../Assets/js/bootstrap.min.js"></script>
+  <script src="../../Assets/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../../Assets/js/Script.js"></script>
+</body>
+
+</html>
